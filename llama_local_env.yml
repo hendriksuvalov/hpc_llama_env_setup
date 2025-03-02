@@ -1,0 +1,19 @@
+name: llama_local
+channels:
+  - conda-forge
+  - defaults
+  - pytorch
+dependencies:
+  - python=3.8
+  - pytorch
+  - transformers
+  - numpy
+  - pandas
+  - matplotlib
+  - jupyter
+  - pip
+  - pydantic
+  - pip:
+      - openai
+      - dspy
+      - outlines
