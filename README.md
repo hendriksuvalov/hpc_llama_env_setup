@@ -68,7 +68,7 @@ sbatch llama_local_notebook.sbatch
 
 When the task goes through, it should generate a log file as well, which you can see by typing ```cat jupyter-log-<task_id>```. If everything is successful, it should contain a link directing you to the notebook instance. Use the one that is not _localhost_ or _127.0.0.1_. If for some reason the page is not loading, make sure you are either in **eduroam** WIFI or using a VPN. 
 
-_Running_a_small_llama_model.ipynb_ is an example notebook file that should init a model and generate tokens. It runs a ridiculously small model that does not do anything useful other than validates our code. Replace the model card with a preferred model of your own.
+_example_llm.ipynb_ is an example notebook file that should init a model and generate tokens. It runs on vllm library. Replace the model card with a preferred model of your own.
 
 Remember to kill the task once you're done. You can modify the _llama_local_notebook.sbatch_ to ask for more resources or a longer task time (currently 4h). Check out HPC docs at https://docs.hpc.ut.ee/public/ for more help.
 
