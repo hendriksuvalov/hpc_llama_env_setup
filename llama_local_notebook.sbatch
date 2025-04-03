@@ -2,8 +2,9 @@
 #SBATCH --partition gpu
 #SBATCH --nodes 1
 #SBATCH --time 04:00:00
-#SBATCH --gres=gpu:tesla:1
-#SBATCH --mem 40G
+#SBATCH --gres=gpu:a100-80g
+#SBATCH --mem 64G
+#SBATCH --cpus-per-task=16
 #SBATCH --job-name llama_local_notebook
 #SBATCH --output jupyter-log-%J.txt
 #SBATCH --mail-type=ALL
